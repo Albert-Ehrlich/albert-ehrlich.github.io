@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Full Width</title>
+    <style>
+        body,
+        html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow-y: auto;
+            /* Enable vertical scrolling */
+            display: flex;
+            justify-content: center;
+            align-items: start;
+            /* Align items to the start of the container */
+        }
+
+        img {
+            width: 80vw;
+            /* 90% of the viewport width */
+            height: auto;
+            /* Maintain aspect ratio */
+            display: block;
+        }
+
+        @media (max-width: 991px) {
+            img {
+                width: 90vw;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <img src="./jegh1.png" alt="Sample Image">
+</body>
+
+</html>
